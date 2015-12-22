@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Money to Time</title>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/moneyTime.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1>How much of your time paid for that?</h1>
+    <p>It's a question that fascinates particularly new workers. When your favourite coffee took half an hour to earn, it can certainly start to lose some of its joy. I want to take this and reverse it though. Of course this can be used just to see how many hours of your week are used to pay for individual objects, but the idea is not that.</p>
+    <p>The idea is to make the time the important factor, not the money. To help determine what you would want to invest your time in, what you would invest more time in, and what you would invest less. Because the value of money is what we gain from it, and we forget this abstraction at our own risk.</p>
+    <p>So when you are buying your coffee with ten minutes, think of the joy you get out of it, and if you work an hour a day for your coffee, maybe cut back a bit. :)</p>
+
+    <form class="form-inline hourly-rate">
+      <div class="form-group">
+        <label for="hours">Hours/week</label>
+        <select class="form-control" name="hours">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+          <option>17</option>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+          <option>21</option>
+          <option>22</option>
+          <option>23</option>
+          <option>24</option>
+          <option>25</option>
+          <option>26</option>
+          <option>27</option>
+          <option>28</option>
+          <option>29</option>
+          <option>30</option>
+          <option>31</option>
+          <option>32</option>
+          <option>33</option>
+          <option>34</option>
+          <option>35</option>
+          <option>36</option>
+          <option>37</option>
+          <option>38</option>
+          <option>39</option>
+          <option>40</option>
+          <option>41</option>
+          <option>42</option>
+          <option>43</option>
+          <option>44</option>
+          <option>45</option>
+          <option>46</option>
+          <option>47</option>
+          <option>48</option>
+          <option>49</option>
+          <option>50</option>
+          <option>51</option>
+          <option>52</option>
+          <option>53</option>
+          <option>54</option>
+          <option>55</option>
+          <option>56</option>
+          <option>57</option>
+          <option>58</option>
+          <option>59</option>
+          <option>60</option>
+          <option>61</option>
+          <option>62</option>
+          <option>63</option>
+          <option>64</option>
+          <option>65</option>
+          <option>66</option>
+          <option>67</option>
+          <option>68</option>
+          <option>69</option>
+          <option>700</option>
+        </select>
+        <label class="sr-only" for="hourlyRate">Amount (in dollars)</label>
+        <div class="input-group">
+          <div class="input-group-addon">$</div>
+          <input type="text" class="form-control" id="hourlyRate" placeholder="Amount" name="salary">
+        </div>
+        <label class="radio-inline">
+          <input type="radio" name="pay-type" id="hourly" value="hourly"> Hourly Rate
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="pay-type" id="weekly" value="weekly"> Weekly Rate
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="pay-type" id="yearly" value="yearly"> Yearly Rate
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary hourly-rate">Calculate Value of your Hour</button>
+    </form>
+    <p class="hourly-rate-result">Effective Value of Hour: </p>
+
+    <form class="form-inline item-value item-worth-form">
+      <div class="form-group">
+        <label for="name" class="text-inline">Hours to earn:</label>
+        <input type="text" class="form-control" id="name" placeholder="Purchase Name" name="name">
+        <div class="input-group">
+          <div class="input-group-addon">$</div>
+          <input type="text" class="form-control" id="cost" placeholder="Amount" name="cost">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary item-worth">Calculate Time Cost</button>
+    </form>
+    <div class="worth">
+      <p class="item-worth">Result: </p>
+    </div>
+
+  </body>
+</html>
