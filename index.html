@@ -59,7 +59,7 @@
           <option>37</option>
           <option>38</option>
           <option>39</option>
-          <option>40</option>
+          <option selected>40</option>
           <option>41</option>
           <option>42</option>
           <option>43</option>
@@ -89,7 +89,7 @@
           <option>67</option>
           <option>68</option>
           <option>69</option>
-          <option>700</option>
+          <option>70</option>
         </select>
         <label class="sr-only" for="hourlyRate">Amount (in dollars)</label>
         <div class="input-group">
@@ -102,6 +102,11 @@
         <label class="radio-inline">
           <input type="radio" name="pay-type" id="weekly" value="weekly"> Weekly Rate
         </label>
+
+        <label class="radio-inline">
+          <input type="radio" name="pay-type" id="fortnightly" value="fortnightly"> Fortnightly Rate
+        </label>
+
         <label class="radio-inline">
           <input type="radio" name="pay-type" id="yearly" value="yearly"> Yearly Rate
         </label>
@@ -122,8 +127,11 @@
       <button type="submit" class="btn btn-primary item-worth">Calculate Time Cost</button>
     </form>
     <div class="worth">
-      <p class="item-worth">Result: </p>
+      <p>Hours you need to work for all this: <span id="totals"></span></p>
+      <p class="item-worth">Results: </p>
+      <ul id="items"></ul>
     </div>
 
+    <button class="btn btn-primary reset">Reset</button>
   </body>
 </html>
